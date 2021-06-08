@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://kit.fontawesome.com/95a3ae1020.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="bg-dark">
+    <header class=" bg-dark pt-4 text-center text-primary">
+        <h1><i class="fas fa-calculator"></i> JS Registration</h1>
+    </header>
+
+
+    <main class="bg-whiteyorange pt-0 pb-0 main-background">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-9 col-xl-7 ">
+                    <div class="register-section w-100 justify-content-center p-4">
+                        <section>
+                            <h5>Please fulfill informations for registration</h5>
+                        </section>
+                        <form action="calculator.html" method="post" class="form-inline" id="form" name="form">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="firstName" name="name" placeholder="name">
+                                <label for="firstName">Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="surname" name="surname"
+                                    placeholder="surname">
+                                <label for="surname">Surname</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                <label for="email">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="password" name="password"
+                                    placeholder="password">
+                                <label for="password">Password</label>
+                            </div>
+                            <p class="text-white"> Your password should consist at least one lowercase letter, at least
+                                one uppercase
+                                letter, at least one digit, and at least one special character. Your password must be at
+                                least 6 characters and at most 15 characters.</p>
+                            <div class="form-check form-check-inline mb-3">
+                                <input type="radio" name="sex" class="btn-check" id="male" value="male" checked>
+                                <label class="btn btn-outline-primary btn" for="male">Male</label>
+
+                                <input type="radio" name="sex" class="btn-check" id="female" value="female">
+                                <label class="btn btn-outline-primary btn" for="female">Female</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="birthday" name="birthday">
+                                <label for="birthday">Birthday : DD.MM.YYYY </label>
+                            </div>
+
+                            <h5> Mark your interests: </h5>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" class="btn-check" name="music" value="music" id="music">
+                                <label for="music" class="btn btn-outline-primary m-2">Music</label>
+                                <input type="checkbox" class="btn-check" name="sports" value="sports" id="sports">
+                                <label for="sports" class="btn btn-outline-primary m-2">Sports</label>
+                                <input type="checkbox" class="btn-check" name="science" value="science" id="science">
+                                <label for="science" class="btn btn-outline-primary m-2">Science</label>
+                                <input type="checkbox" class="btn-check" name="economy" value="economy" id="economy">
+                                <label for="economy" class="btn btn-outline-primary m-2">Economy</label>
+                                <input type="checkbox" class="btn-check" name="travel" value="travel" id="travel">
+                                <label for="travel" class="btn btn-outline-primary m-2">Travel</label>
+                                <input type="checkbox" class="btn-check" name="health" value="health" id="health">
+                                <label for="health" class="btn btn-outline-primary m-2">Health</label>
+                                <input type="checkbox" class="btn-check" name="food" value="food" id="food">
+                                <label for="food" class="btn btn-outline-primary m-2">Food</label>
+
+
+
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-primary btn-outline-dark w-100 mb-2">Submit</button>
+                            <input type="reset" class="btn btn-outline-dark btn-primary w-100" value="Reset">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

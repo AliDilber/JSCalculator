@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    z-index: -1;
+}
+h5 {
+    color: blue;
+}
+.main-background {
+    position: relative;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index: 1;
+}
+
+
+input.read-more-state {
+    display: none;
+}
+
+p.read-more-target {
+    font-size: 0;
+    opacity: 0;
+    transition: 0.25s ease;
+}
+
+input.read-more-state:checked ~ div.read-more-wrap p.read-more-target {
+    font-size: inherit;
+    max-height: 999em;
+    opacity: 1;
+}
+
+input.read-more-state ~ label.read-more-trigger::before {
+    content: "Show More";
+}
+
+input.read-more-state:checked ~ label.read-more-trigger::before {
+    content: "Show Less";
+}
+
+label.read-more-trigger {
+    margin: 0.6rem 0;
+    padding: 0.6rem;
+    cursor: default;
+    display: inline-block;
+    background-color: black;
+    color: darkgoldenrod;
+    transition: 0.5s ease;
+}
+
+label.read-more-trigger:hover {
+    background-color: gray;
+    color: darkblue;
+}
+
+.register {
+    max-height: 100%;
+}
+/* calculator css */
+
+.calculator-css {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222831;
+    font-family: sans-serif;
+}
+
+.calculator {
+    width: 340px;
+    padding-bottom: 15px;
+    border-radius: 7px;
+    background-color: #000;
+    box-shadow: 5px 8px 8px -2px rgba(0, 0, 0, 0.61);
+}
+
+.display {
+    width: 100%;
+    height: 80px;
+    border: none;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 2rem;
+    background-color: #00ff44;
+    color: #000;
+    text-align: right;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+  
+button.btn-css {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    background-color:black;
+    color:white;
+    margin: 10px;
+}
+  
+button.btn-css:hover {
+    cursor: pointer;
+}
+
+.operator {
+    background-color: #00ff44;
+    color: #000;
+  }
+
+.body-css {
+
+    width: 100vw;
+  
+    height: 100vh;
+  
+    overflow: hidden;
+  
+    display: flex;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+    background-color: #222831;
+  
+    font-family: sans-serif;
+  
+}
